@@ -8,9 +8,7 @@ namespace Demo.PolyMarphism
 {
      class TypeA
     {
-
         public int A { get; set; }
-
         public TypeA(int a)
         {
             A = a;
@@ -23,6 +21,8 @@ namespace Demo.PolyMarphism
         {
             Console.WriteLine($"MyFun02 => Type A :{A}");
         }
+        public virtual void XYZ() { }
+        public  void XYZ2() { }
     }
     internal class TypeB : TypeA
     {
@@ -43,5 +43,11 @@ namespace Demo.PolyMarphism
             Console.WriteLine("here is my fun02 type b");
 
         }
+
+        public new void XYZ2()
+        {
+        }
+        //override
+
     }
 }

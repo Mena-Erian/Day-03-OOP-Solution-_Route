@@ -11,8 +11,8 @@ namespace Demo
         {
             #region Operators Overloading
 
-            Complex C1 = new Complex() { Real = 2, Imag = 4 };
-            Complex C2 = new Complex() { Real = 3, Imag = 5 };
+            /// Complex C1 = new Complex() { Real = 2, Imag = 4 };
+            /// Complex C2 = new Complex() { Real = 3, Imag = 5 };
 
             #region Binary Operators
             /// Complex C3 = default;
@@ -86,15 +86,46 @@ namespace Demo
 
             #endregion
 
+            #endregion
+
             #region Overriding
             /// TypeA typeA = new TypeB(2,4);
             /// typeA.MyFun02(); // Dynamic Binding (Happen in Run Time)
             #endregion
 
+            #region What is Binding
+            /// // Binding as Behavior
+            /// // 1. Static  Binding
+            /// // 2. Dynamic Binding
+            ///
+            /// // Reference from Parent = Object from Child
+            /// TypeA RefBase = new TypeB(1, 2);
+            ///
+            /// RefBase.A = 11;
+            /// //RefBase.B = 12; // Can't Access
+            /// RefBase.MyFun01(); // `Iam Base [Parent]` Static  Binding
+            /// /// Static Binding [Early Binding]
+            /// /// Compiler will Bind Function Call Based On Reference Not Object
+            /// /// at Compilation Time.
+            ///
+            /// RefBase.MyFun02(); // Dynamic Binding
+            /// /// Dynamic Binding [Late Binding]
+            /// /// CRL Will Bind Function Call Based On Object not Reference
+            /// /// at Runtime.
+            #endregion
 
+            #region Not Binding is (Casting)
+            //TypeA typeA;
+            //typeA = new TypeA(1);
+            //typeA = new TypeB(1,2);
 
+            //TypeB typeB = (TypeB) typeA; 
+            #endregion
+
+            #region 
 
             #endregion
+
         }
     }
 }
