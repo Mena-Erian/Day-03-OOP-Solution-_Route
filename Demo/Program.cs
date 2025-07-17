@@ -1,4 +1,5 @@
-﻿using Demo.Operators_Overloading;
+﻿using Demo.Casting_Operators_Overloading;
+using Demo.Operators_Overloading;
 
 namespace Demo
 {
@@ -63,6 +64,24 @@ namespace Demo
             /// string Y = (string)C1;
             /// 
             /// Console.WriteLine(Y); 
+            #endregion
+
+            #region Business Example 
+            /// User user = new User()
+            /// {
+            ///     Id = 1,
+            ///     FullName = "Mena Erian",
+            ///     Email = "codewithmena@gmail.com",
+            ///     Password = "p@ssword",
+            ///     SecriryStmp = Guid.NewGuid(),
+            /// };
+            /// UserViewModel userViewModel = (UserViewModel)user;
+            /// 
+            /// Console.WriteLine(userViewModel.Id);
+            /// Console.WriteLine(userViewModel.FName);
+            /// Console.WriteLine(userViewModel.LName);
+            /// Console.WriteLine(userViewModel.Email);
+            /// Console.WriteLine(userViewModel.Password); 
             #endregion
 
             #endregion
