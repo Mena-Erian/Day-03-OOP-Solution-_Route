@@ -1,5 +1,6 @@
 ﻿using Demo.Casting_Operators_Overloading;
 using Demo.Operators_Overloading;
+using Demo.PolyMarphism;
 
 namespace Demo
 {
@@ -46,7 +47,6 @@ namespace Demo
             /// }
             #endregion
 
-
             #region Casting Operators Overloading
 
             #region Example 01
@@ -85,6 +85,14 @@ namespace Demo
             #endregion
 
             #endregion
+
+            #region Overriding
+            /// TypeA typeA = new TypeB(2,4);
+            /// typeA.MyFun02(); // Dynamic Binding (Happen in Run Time)
+            #endregion
+
+
+
 
             #endregion
         }
